@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>NUIST Book Gallery</title>
+</head>
+<body class="container">
+    <h1 class="text-primary text-center mt-3">NUIST BOOK GALLERY</h1>
+        <div class="input-group w-50 mx-auto my-4">
+            <input type="text" id="search-book" class="form-control" placeholder="Search book by name..." aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" onclick="bookSearch()" id="search-btn">Search</button>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div id="loading"  class=" spinner-border text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        </div>
+        <div class="bg-light rounded-pill text-white mb-5 w-25 text-center mx-auto">
+         <h3 class="text-danger " id="error-msg">No Result Found</h3>
+         <div class="text-success fw-bold fs-3" id="book-length"></div>
+      </div>
+    <div id="display-book" class="row row-cols-1 row-cols-md-3 g-4">
+        
+    </div>
+    <!-- Sctipts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
